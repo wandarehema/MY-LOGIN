@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Cost Accounting Module</h1>
+  <form (ngSubmit)="calculateDepreciation()">
+    <div class="form-group">
+      <label for="assetValue">Asset Value:</label>
+      <input type="number" id="assetValue" class="form-control" [(ngModel)]="assetValue" name="assetValue" required>
+    </div>
+    <div class="form-group">
+      <label for="usefulLife">Useful Life (years):</label>
+      <input type="number" id="usefulLife" class="form-control" [(ngModel)]="usefulLife" name="usefulLife" required>
+    </div>
+    <div class="form-group">
+      <label for="salvageValue">Salvage Value:</label>
+      <input type="number" id="salvageValue" class="form-control" [(ngModel)]="salvageValue" name="salvageValue" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calculate Depreciation</button>
+  </form>
+  <div *ngIf="depreciation !== null">
+    <h2>Annual Depreciation: {{ depreciation | currency }}</h2>
+    <button class="btn btn-danger">Dispose</button>
+  </div>
+</div>
+
+
