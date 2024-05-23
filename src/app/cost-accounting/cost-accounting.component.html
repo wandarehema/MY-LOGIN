@@ -17,8 +17,7 @@
   </form>
   <div *ngIf="depreciation !== null">
     <h2>Annual Depreciation: {{ depreciation | currency }}</h2>
+    <div [chart]="chart"></div>
     <button class="btn btn-danger">Dispose</button>
   </div>
 </div>
-
-

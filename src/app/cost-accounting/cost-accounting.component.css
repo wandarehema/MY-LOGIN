@@ -1,6 +1,6 @@
 /* Center the container on the page */
 .container {
-  max-width: 600px;
+  max-width: 800px; /* Increase width to accommodate the chart */
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -54,21 +54,9 @@ input[type="number"] {
   background-color: #45a049;
 }
 
-/* Style the results section */
-.results {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-}
-
-.results p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-/* Style the results strong text */
-.results p strong {
-  color: #333;
+/* Style the chart canvas */
+#depreciationChart {
+  margin-top: 20px; /* Add some space between the form and the chart */
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

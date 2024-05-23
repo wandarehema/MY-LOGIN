@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {Component} from '@angular/core';
+import { ChartModule } from 'angular-highcharts';
 
 import { AuthService } from './services/auth.service';
 import { AppComponent } from './app.component';
@@ -15,7 +16,9 @@ import { AppRoutingModule } from './app-routing.module';
 
     AppComponent,
      CostAccountingComponent,
+
      LoginComponent,
+   
     
   
   ],
@@ -24,6 +27,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ChartModule,
     AppRoutingModule
   
   ],
